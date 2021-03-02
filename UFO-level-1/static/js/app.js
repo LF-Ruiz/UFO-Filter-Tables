@@ -31,20 +31,22 @@ generateTable(table, tableData);
 // });
 
 
-// --------------------------------------------------------
-button= d3.select("#filter-btn");
-
-button.on("click",function(){
+function filter() {
   // Prevent the page from refreshing
   d3.event.preventDefault();
-  input=d3.select("#datetime");
-  inputValue=input.property("value");
-  filterByDate=tableData.filter(date => date.datetime === inputValue);
-  console.log("filter",filterByDate);
-  generateTable(table,filterByDate);
+  input = d3.select("#datetime");
+  inputValue = input.property("value");
+  filterByDate = tableData.filter(date => date.datetime === inputValue);
+  console.log("filter", filterByDate);
+  generateTable(table, filterByDate);
+};
+// --------------------------------------------------------
+button = d3.select("#filter-btn");
 
-});
-reset=d3.select("#reset-btn");
-reset.on("click",function(){
-  generateTable(table,tableData);
+button.on("click", filter);
+
+
+reset = d3.select("#reset-btn");
+reset.on("click", function () {
+  generateTable(table, tableData);
 });

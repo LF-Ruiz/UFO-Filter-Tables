@@ -8,38 +8,126 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="../UFO-level-1/static/images/babyYoda/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../UFO-level-1/static/images/babyYoda/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../UFO-level-1/static/images/babyYoda/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../UFO-level-1/static/images/babyYoda/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../UFO-level-1/static/images/babyYoda/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../UFO-level-1/static/images/babyYoda/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../UFO-level-1/static/images/babyYoda/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../UFO-level-1/static/images/babyYoda/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../UFO-level-1/static/images/babyYoda/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../UFO-level-1/static/images/babyYoda/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../UFO-level-1/static/images/babyYoda/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../UFO-level-1/static/images/babyYoda/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../UFO-level-1/static/images/babyYoda/favicon-16x16.png">
-    <link rel="manifest" href="../UFO-level-1/static/images/babyYoda/manifest.json">
+    <!--reference link to css stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!---refernce links to bootstrap tool-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="UFO-level-1/static/images/babyYoda/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="UFO-level-1/static/images/babyYoda/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="UFO-level-1/static/images/babyYoda/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="UFO-level-1/static/images/babyYoda/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="UFO-level-1/static/images/babyYoda/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="UFO-level-1/static/images/babyYoda/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="UFO-level-1/static/images/babyYoda/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="UFO-level-1/static/images/babyYoda/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="UFO-level-1/static/images/babyYoda/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="UFO-level-1/static/images/babyYoda/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="UFO-level-1/static/images/babyYoda/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/UFO-level-1/static/images/babyYoda/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/UFO-level-1/static/images/babyYoda/favicon-16x16.png">
+    <link rel="manifest" href="UFO-level-1/static/images/babyYoda/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class = "body">
+
+    <nav class=" navbar-expand-lg navbar-light navbar nav-color">
+
+
+        <a class="navbar-brand home" href="index.html"> Home</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--convert the nav bar to small size with end the bar format-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 sub-nav-color">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="UFO-level-1/index.html">UFO Level 1</a>
+
+                            <a class="dropdown-item" href="UFO-level-2/index.html">UFO Level 2</a>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="UFO-level-1/index.html">UFO Level 1 </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="UFO-level-2/index.html">UFO Level 2 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="wrapper">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">UFO Sightings
-                        <img class="nav-ufo" src="static/images/ufo.svg">
-                    </a>
+                        <img class="nav-ufo" src="UFO-level-1/static/images/ufo.svg">
+                    </a>                    
                 </div>
             </div>
+            <section class = "summary">
+        <h1 class = "header">Summary</h1>
+        <p>WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of 
+        the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and 
+        then the matter will finally be put to rest.
+        There is just one tiny problem though... our collection is too large to search through manually. 
+        Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
+        That's why we are hiring you. We need you to write code that will create a table dynamically based upon a dataset we provide
+        (StarterCode/static/js/data.js). 
+        We also need to allow our users to filter the table data for specific values. There's a catch though... 
+        we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
+        You can handle this... right? The planet Earth needs to know what we have found!</p>
+    </section>
         </nav>
     </div>
     
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="width: 50rem;">
+
+                    <img class="card-img-top" src="images/ufo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">UFO Level 1</h5>
+                            <p class="card-text">Use a date form in your HTML document and write 
+                            JavaScript code that will listen for events and search 
+                            through the "date/time" column to find rows that match user input.</p>
+                            <a href="UFO-level-1/index.html" class="btn btn-primary">UFO Level 1</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="width: 50rem;">
+                    <img class="card-img-top" src="images/ufo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">UFO Level 2</h5>
+                            <p class="card-text">Using multiple "input" tags and/or select dropdowns, 
+                            write JavaScript code so the user can to set multiple filters and search 
+                            for UFO sightings using the following criteria based on the table columns</p>
+                            <a href="UFO-level-2/index.html" class="btn btn-primary UFO">UFO Level 2</a>
+                        </div>
+                </div>
+            </div>
+
 </body>
 </html>
