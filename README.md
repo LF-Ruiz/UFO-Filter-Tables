@@ -23,4 +23,4 @@ And here we are some pictures for the filters:
 ![UFO-Level-1](https://github.com/LF-Ruiz/javascript-challenge/blob/main/images/UFO-1.PNG)
 
 # UFO Level 2
-![UFO-Level-2](main/images/UFO-2.PNG)
+![UFO-Level-2](images/UFO-2.PNG)
